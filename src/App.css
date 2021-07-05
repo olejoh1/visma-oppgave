@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto auto;
+  grid-gap: 20px;
+  max-width: 1250px;
+  margin: auto;
+  font-family: 'Times New Roman';
+  color: black;
+  margin-top: 15px;
+  grid-template-areas: 
+      'nav nav nav'
+      'header header header'
+      'main main main'
+      'footer footer footer';
+}
+
+#header {
+  grid-area: header;
+  text-align: center;
+  padding-top: 70px;
+  width: 100%;
+}
+
+#nav {
+  grid-area: nav;
+  font-variant: small-caps;
+  background-color: #007aca;
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+
+#nav h2{
+  width: 80%;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  width: 100%;
+  text-align: center;
+  background-color: lightgrey;
+  color: black;
+  grid-area: footer;
+  margin-top: 20px;
+}
